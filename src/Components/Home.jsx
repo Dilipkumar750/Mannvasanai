@@ -9,10 +9,12 @@ import Menu from './Menu';
 import Contact from './Contact';
 import Sepeciality from './Sepeciality';
 import Footer from './Footer';
+import HomePage from './HomePage';
 
 const Home = () => {
   return (
     <div>
+      <HomePage/>
       <Hero/>
       <Swipe/>
       <Testmonial/>

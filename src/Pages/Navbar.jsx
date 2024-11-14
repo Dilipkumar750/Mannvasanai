@@ -9,12 +9,21 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-sm z-50 w-full top-0 md:sticky">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav className="bg-white shadow-sm z-50 w-full top-0 md:sticky h-28">
+      <div className="container mx-auto flex items-center justify-between py-4">
         {/* Logo */}
         <a className="navbar-brand" href="#/">
-          <img src={logo} alt="Brand Logo" style={{ width: '120px' }} />
+          <img 
+            src={logo} 
+            alt="Brand Logo" 
+            className="max-w-24 h-24" 
+            style={{ width: '120px' }} 
+          />
         </a>
+        {/* Tagline */}
+        <div className="hidden md:flex flex-grow font-bold text-gray-700">
+          <span>மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது<br />அற்றது போற்றி உணின்.</span>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
@@ -37,6 +46,7 @@ function Navbar() {
         <button
           onClick={toggleMenu}
           className="md:hidden text-gray-700 focus:outline-none"
+          aria-label="Toggle Navigation"
         >
           {/* Icon for the menu button */}
           <svg
