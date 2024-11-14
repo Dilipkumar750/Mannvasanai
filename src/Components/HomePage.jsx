@@ -89,17 +89,17 @@ const About1 = () => {
           <span className="block mb-4 text-lg font-semibold text-primary">
             கோவை மண்வாசனை இயற்கை உணவகம்
           </span>
-          <h2 className="mb-5 text-lg font-bold text-dark sm:text-[12px]/[20px]">
+          <h2 className="mb-5 text-[12px] font-bold text-dark  md:text-md">
             தற்காத்துத் தற்கொண்டாற் பேணித் தகைசான்ற <br />
             சொற்காத்துச் சோர்விலாள் பெண்.
           </h2>
-          <p className="absolute bottom-28 right-0 mb-4 mr-4 text-lg font-semibold text-gray-700">
+          <p className="absolute bottom-24 right-0 mb-4 mr-4 text-md font-semibold text-gray-700">
             — திருவள்ளுவர்
           </p>
           <p className="text-lg font-semibold mb-2">
             {/* This is the main text content */}
           </p>
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-sm lg:text-md">
             விளக்கம்: தன்னை காத்து, தான் கொண்டவர்களை பாதுகாத்து, தகுதிக்குத்
             தகுதியாகச் சோர்வில்லாமல் இருப்பவளே பெண்.
           </p>

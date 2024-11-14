@@ -6,7 +6,7 @@ import green from "../assets/bg2.jpg";
 const Hero = () => {
   return (
     <div
-      className="flex flex-col items-center w-full h-[100vh] pt-10"
+      className="flex flex-col items-center w-full h-[100%] pt-10 "
       style={{
         backgroundImage: `url(${green})`,
         backgroundSize: "cover",
@@ -15,10 +15,10 @@ const Hero = () => {
     >
       {/* Title Section */}
       <h1 className="text-center text-3xl md:text-4xl text-white font-bold mt-10">
-        உலகின் முதல் உணவு விஞ்ஞானி <span className="text-white">அம்மா..</span>
+        உலகின் முதல் உணவு விஞ்ஞானி <span className="text-white">{`"`}அம்மா..{`"`}</span>
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 h-full w-full px-6 gap-6 items-center -mt-28">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 h-full w-full px-4 py-32 gap-6 items-center ">
         {/* Nammalvar Image */}
         <div className="flex justify-center" data-aos="fade-right">
           <img
