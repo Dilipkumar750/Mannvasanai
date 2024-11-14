@@ -1,62 +1,116 @@
-import React from 'react';
-import poster from "../assets/poster.jpg"; // Using the 'poster.jpg' image
-import background from "../assets/background2.png"; // Background image
+import { FaAppleAlt, FaHeart, FaArrowUp } from "react-icons/fa";
+import poster from "../assets/poster.jpg";
+import background from "../assets/bg1.jpg";
+import nammalvar from "../assets/nammalvar.jpg";
 
-const HomePage = () => {
+const About1 = () => {
   return (
-    <div 
-      className="flex flex-col justify-between p-6 h-screen bg-cover bg-center" 
-      style={{ backgroundImage: `url(${background})` }}  // Setting the background image
+    <section
+      className="min-h-screen relative flex items-center overflow-hidden bg-cover bg-center w-full"
+      style={{ backgroundImage: `url(${background})` }}
     >
-
-      {/* Top Text Section */}
-      <div className="flex justify-between items-center w-full mt-8 px-6 space-x-4">
-        <h4 className="text-lg md:text-2xl font-semibold text-white">உணவு!</h4>
-        <h4 className="text-lg md:text-2xl font-semibold text-white">உணர்வு!!</h4>
-        <h4 className="text-lg md:text-2xl font-semibold text-white">உயர்வு!!!</h4>
+      {/* Top Icons and Text Row */}
+      <div
+        className="absolute  flex-wrap top-2 ml-[10%] space-x-8 mt-6 md:mt-0 md:ml-0 md:top-8  md:left-1/2 md:transform md:-translate-x-1/2 flex lg:space-x-28 md:space-y-5 md:space-x-8 lg:space-y-0 lg:-translate-x-10 backdrop-blur-lg"
+        data-aos="fade-down"
+      >
+        {[
+          {
+            icon: (
+              <FaAppleAlt className="text-red-400 w-3 mr-2 md:w-full animate-bounce" />
+            ),
+            text: "உணவு!",
+          },
+          {
+            icon: (
+              <FaHeart className="text-red-400 w-3 mr-2 md:w-full animate-bounce" />
+            ),
+            text: "உணர்வு!!",
+          },
+          {
+            icon: (
+              <FaArrowUp className="text-green-400 mr-2 w-3 md:w-full animate-bounce" />
+            ),
+            text: "உயர்வு!!!",
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="flex items-center  mr-2 md:h-20   md:p-3 px-1 py-1  md:rounded-xl  rounded-md transition-opacity shadow-md"
+          >
+            {item.icon}
+            <h4 className="text-[14px] md:text-2xl font-semibold md:text-gray-800 text-white">
+              {item.text}
+            </h4>
+          </div>
+        ))}
       </div>
 
-      {/* Flex Container for Image and Text */}
-      <div className="flex justify-between items-center mt-8 w-full">
+      {/* Main Content */}
+      <div className="container mx-auto flex flex-col lg:flex-row items-center mt-10 md:mt-0 justify-between px-4 py-6">
+        {/* Image Grid Section */}
+        <div className="w-full lg:w-[50%] mb-8 lg:mb-0 lg:translate-x-20">
+          <div
+            className="flex flex-wrap items-center justify-center"
+            
+          >
+            {/* Reduced size for the first two images */}
+            <div className="w-[40%] sm:w-1/2 hidden md:block p-3" data-aos="fade-right">
+              <img
+                src={nammalvar}
+                alt="Image 1"
+                className="w-[80%] lg:translate-x-10 rounded-2xl"
+              />
+              <img
+                src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                alt="Image 2"
+                className="w-[80%] lg:translate-x-10 mt-4 rounded-2xl"
+              />
+            </div>
 
-        {/* Image Section */}
-        <div className="flex justify-center w-1/2">
-          <img
-            src={poster} // Poster image used here
-            className="rounded-lg shadow-2xl w-full max-w-sm h-auto"
-            alt="Poster"
-          />
-        </div>
-
-        {/* Text Section */}
-        <div className="flex flex-col justify-center text-center text-white px-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            கோவை மண்வாசனை இயற்கை உணவகம்
-          </h2>
-
-          {/* Thirukkural and Explanation */}
-          <div className="text-sm md:text-base text-gray-800 mx-4 md:mx-20">
-            <p className="text-xl text-gray-900">
-              தற்காத்துத் தற்கொண்டாற் பேணித் தகைசான்ற <br />
-              சொற்காத்துச் சோர்விலாள் பெண்.
-            </p>
-            <p className="mt-2 text-lg font-semibold text-gray-900">
-              <strong>திருவள்ளுவர்</strong>
-            </p>
-
-            {/* Explanation */}
-            <div className="mt-4 text-base text-gray-700">
-              <p>
-                விளக்கம்: தன்னை காத்து தான் கொண்டவர்களை பாதுகாத்து தகுதிக்கு உதாரனமாய் வாய்ச்சொல் காத்து சோர்வில்லாமல் இருப்பவளே பெண்.
-              </p>
+            {/* Increased size for the third image */}
+            <div
+              className="w-full h-full sm:w-1/2 p-3"
+              data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="500"
+            >
+              <img
+                src={poster}
+                alt="Poster"
+                className="w-full h-full rounded-2xl object-cover"
+              />
             </div>
           </div>
         </div>
 
+        {/* Text Content Section as Card */}
+        <div
+          className="w-full lg:w-5/12 p-6 bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg relative"
+          data-aos="fade-up"
+        >
+          <span className="block mb-4 text-lg font-semibold text-primary">
+            கோவை மண்வாசனை இயற்கை உணவகம்
+          </span>
+          <h2 className="mb-5 text-lg font-bold text-dark sm:text-[12px]/[20px]">
+            தற்காத்துத் தற்கொண்டாற் பேணித் தகைசான்ற <br />
+            சொற்காத்துச் சோர்விலாள் பெண்.
+          </h2>
+          <p className="absolute bottom-28 right-0 mb-4 mr-4 text-lg font-semibold text-gray-700">
+            — திருவள்ளுவர்
+          </p>
+          <p className="text-lg font-semibold mb-2">
+            {/* This is the main text content */}
+          </p>
+          <p className="text-gray-600">
+            விளக்கம்: தன்னை காத்து, தான் கொண்டவர்களை பாதுகாத்து, தகுதிக்குத்
+            தகுதியாகச் சோர்வில்லாமல் இருப்பவளே பெண்.
+          </p>
+        </div>
       </div>
-
-    </div>
+    </section>
   );
 };
 
-export default HomePage;
+export default About1;

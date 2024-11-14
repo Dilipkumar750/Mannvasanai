@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import logo from "../assets/brahmmis logo recreate.png";
 
 function Navbar() {
@@ -9,84 +9,110 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-sm z-50 w-full top-0 md:sticky h-28">
-      <div className="container mx-auto flex items-center justify-between py-4">
+    <header className="shadow sticky top-0 bg-gray-50 z-50 w-full">
+      <div className="relative flex max-w-screen-xl flex-col overflow-hidden  pt-2 md:mx-auto md:flex-row md:items-center">
         {/* Logo */}
-        <a className="navbar-brand" href="#/">
-          <img 
-            src={logo} 
-            alt="Brand Logo" 
-            className="max-w-24 h-24" 
-            style={{ width: '120px' }} 
+        <a
+          href="#"
+          className="flex items-center whitespace-nowrap text-2xl font-black"
+        >
+          <img
+            src={logo}
+            alt="Brand Logo"
+            className="max-w-24 h-24"
+            data-aos="fade-in" data-aos-duration="3000"
+            style={{ width: "120px" }}
           />
         </a>
-        {/* Tagline */}
-        <div className="hidden md:flex flex-grow font-bold text-gray-700">
+        <div className="hidden lg:flex w-full  flex-grow font-bold text-gray-700 text-sm">
           <span>மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது<br />அற்றது போற்றி உணின்.</span>
-        </div>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
-          <a className="nav-link" href="#">Home</a>
-          <a className="nav-link" href="#about-us">About Us</a>
-          <a className="nav-link" href="#our-menu">Our Menu</a>
-          <a className="nav-link" href="#specialty">Specialty</a>
-          <a className="nav-link" href="#contact">Contact Us</a>
-          <a
-            href="https://wa.me/7010652833"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-black text-white py-2 px-4 rounded-lg"
-          >
-            Booking Now
-          </a>
         </div>
 
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="absolute top-5 right-7 cursor-pointer md:hidden"
           aria-label="Toggle Navigation"
         >
-          {/* Icon for the menu button */}
+          <span className="sr-only">Toggle Navigation</span>
           <svg
-            className="w-6 h-6"
+            className="h-6 w-6"
             fill="none"
-            stroke="currentColor"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+            stroke="currentColor"
+            strokeWidth={2}
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
               d="M4 6h16M4 12h16M4 18h16"
-            ></path>
+            />
           </svg>
         </button>
-      </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden">
-          <div className="flex flex-col items-center space-y-2 mt-4">
-            <a className="nav-link" href="#">Home</a>
-            <a className="nav-link" href="#about-us">About Us</a>
-            <a className="nav-link" href="#our-menu">Our Menu</a>
-            <a className="nav-link" href="#specialty">Specialty</a>
-            <a className="nav-link" href="#contact">Contact Us</a>
-            <a
-              href="https://wa.me/7010652833"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black text-white py-2 px-4 rounded-lg"
-            >
-              Booking Now
-            </a>
-          </div>
-        </div>
-      )}
-    </nav>
+        {/* Navigation Menu */}
+        <nav
+          aria-label="Header Navigation"
+          className={`${
+            isOpen ? "mt-8 max-h-56" : "max-h-0"
+          } peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:-ml-28 md:max-h-full md:flex-row md:items-start`}
+        >
+          <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+            <li className="text-gray-600 md:mr-10 hover:text-blue-600 no-underline" data-aos="fade-down" data-aos-duration="400">
+              <a
+                href="#"
+                className="no-underline text-gray-600 hover:text-blue-600 transition-all duration-300"
+                 
+              >
+                Home
+              </a>
+            </li>
+            <li className="text-gray-600 md:mr-12 hover:text-blue-600" data-aos="fade-down" data-aos-duration="600">
+              <a
+                href="#about-us"
+                className="no-underline text-gray-600 hover:text-blue-600 transition-all duration-300"
+              >
+                About Us
+              </a>
+            </li>
+            <li className="text-gray-600 md:mr-12 hover:text-blue-600" data-aos="fade-down" data-aos-duration="800">
+              <a
+                href="#our-menu"
+                className="no-underline text-gray-600 hover:text-blue-600 transition-all duration-300"
+              >
+                Our Menu
+              </a>
+            </li>
+            <li className="text-gray-600 md:mr-12 hover:text-blue-600" data-aos="fade-down" data-aos-duration="1000">
+              <a
+                href="#specialty"
+                className="no-underline text-gray-600 hover:text-blue-600 transition-all duration-300"
+              >
+                Specialty
+              </a>
+            </li>
+            <li className="text-gray-600 md:mr-12 hover:text-blue-600" data-aos="fade-down" data-aos-duration="1200">
+              <a
+                href="#contact"
+                className="no-underline text-gray-600 hover:text-blue-600 transition-all duration-300"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li className="text-gray-600 md:mr-12 p-2 hover:text-blue-600 " data-aos="fade-down" data-aos-duration="1400">
+              <a
+                href="https://wa.me/7010652833"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-600 text-white py-2 px-4 rounded-lg no-underline"
+              >
+                Booking Now
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 }
 
