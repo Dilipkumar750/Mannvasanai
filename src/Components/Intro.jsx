@@ -5,8 +5,11 @@ import { IoIosCall } from "react-icons/io";
 
 export default function Intro() {
     return (
-        <section className="py-10 text-white">
+        <section className="py-10 text-white w-screen ">
             <div className="container mx-auto px-4">
+                 <div className="text-center mb-6">
+          <h1 className="text-3xl font-bold text-gray-800">Easy Reached</h1>
+        </div>
                 <div className="flex flex-wrap justify-center space-y-6 sm:space-y-0 sm:space-x-6">
                     {/* Working Hours */}
                     <div className="group w-72 h-40 cursor-pointer flex justify-center">
