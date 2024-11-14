@@ -11,13 +11,12 @@ const About1 = () => {
     >
       {/* Top Icons and Text Row */}
       <div
-        className="absolute  flex-wrap top-2 ml-[10%] space-x-8 mt-6 md:mt-0 md:ml-0 md:top-8  md:left-1/2 md:transform md:-translate-x-1/2 flex lg:space-x-28 md:space-y-5 md:space-x-8 lg:space-y-0 lg:-translate-x-10 backdrop-blur-lg"
-        data-aos="fade-down"
+        className="absolute  top-2 ml-[10%] space-x-8 mt-6 md:mt-0 md:ml-0 md:top-8  md:left-1/2 md:transform md:-translate-x-[10%] flex lg:space-x-28 md:space-y-0 md:space-x-3 lg:space-y-0 lg:-translate-x-10  item-center"
       >
         {[
           {
             icon: (
-              <FaAppleAlt className="text-red-400 w-3 mr-2 md:w-full animate-bounce" />
+              <FaAppleAlt className="text-red-400 w-3 mr-2 md:w-full animate-pulse" />
             ),
             text: "உணவு!",
           },
@@ -29,17 +28,17 @@ const About1 = () => {
           },
           {
             icon: (
-              <FaArrowUp className="text-green-400 mr-2 w-3 md:w-full animate-bounce" />
+              <FaArrowUp className="text-green-400 mr-2 w-3 md:w-full animate-pulse" />
             ),
             text: "உயர்வு!!!",
           },
         ].map((item, index) => (
           <div
             key={index}
-            className="flex items-center  mr-2 md:h-20   md:p-3 px-1 py-1  md:rounded-xl  rounded-md transition-opacity shadow-md"
+            className="flex items-center   mr-2 md:h-20   md:p-3 px-1 py-1  md:rounded-xl  rounded-md transition-opacity shadow-md backdrop-blur-lg"
           >
             {item.icon}
-            <h4 className="text-[14px] md:text-2xl font-semibold md:text-gray-800 text-white">
+            <h4 className="text-[14px] md:text-sm lg:text-2xl font-semibold md:text-gray-800 text-white">
               {item.text}
             </h4>
           </div>
@@ -47,34 +46,30 @@ const About1 = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto flex flex-col lg:flex-row items-center mt-10 md:mt-0 justify-between px-4 py-6">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center mt-10 md:mt-0 justify-between px-4 py-10">
         {/* Image Grid Section */}
-        <div className="w-full lg:w-[50%] mb-8 lg:mb-0 lg:translate-x-20">
+        <div className="w-full lg:w-[70%] mb-8 lg:mb-0 lg:-translate-x-10">
           <div
             className="flex flex-wrap items-center justify-center"
             
           >
             {/* Reduced size for the first two images */}
-            <div className="w-[40%] sm:w-1/2 hidden md:block p-3" data-aos="fade-right">
+            <div className="w-[40%] sm:w-1/2 hidden md:block p-3 lg:translate-x-28" data-aos="fade-right">
               <img
                 src={nammalvar}
                 alt="Image 1"
-                className="w-[80%] lg:translate-x-10 rounded-2xl"
+                className="w-[60%] lg:translate-x-10 rounded-2xl"
               />
               <img
                 src="https://i.ibb.co/rfHFq15/image-2.jpg"
                 alt="Image 2"
-                className="w-[80%] lg:translate-x-10 mt-4 rounded-2xl"
+                className="w-[60%] lg:translate-x-10 mt-4 rounded-2xl"
               />
             </div>
 
             {/* Increased size for the third image */}
             <div
-              className="w-full h-full sm:w-1/2 p-3"
-              data-aos="fade-left"
-              data-aos-anchor="#example-anchor"
-              data-aos-offset="500"
-              data-aos-duration="500"
+              className="w-full h-full sm:w-1/2 p-3"  
             >
               <img
                 src={poster}
