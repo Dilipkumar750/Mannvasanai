@@ -1,5 +1,5 @@
 import React from 'react';
-import home3 from "../assets/coconut-Burfi.png";
+import home3 from "../assets/mixture.jpg";
 import home2 from '../assets/ell-urundai.png';
 
 const posts = [
@@ -10,18 +10,18 @@ const posts = [
   },
   {
     image: home3,
-    title: "தேங்காய் பர்பி",
-    description: "தேங்காயின் தாய்மை, கருப்பட்டியின் இனிப்பு கை கட்டி <br/> நாடோடும் மகிழ்வின் பரிமாறும் சுவை மிட்டாய்."
+    title: "பாரம்பரிய மிக்சர்",
+    description: "நாகரிகக் கலவையில் சுவை, <br/>உணவின் பண்டிகையில் மகிழ்ச்சி."
   },
 ];
 
 const Swipe = () => {
   return (
-    <div className="flex items-center justify-center h-auto bg-gray-100 py-10">
+    <div className="flex items-center justify-center h-auto bg-white py-10">
       <div className="max-w-screen-lg mx-auto px-4 sm:px-8 md:px-10 lg:px-20">
-        <div className="text-center mb-6">
+        {/* <div className="text-center mb-6">
           <h1 className="text-3xl font-bold text-gray-800">Our Famous Foods</h1>
-        </div>
+        </div> */}
         <div className="space-y-8">
           {posts.map((post, index) => (
             <div
