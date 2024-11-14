@@ -5,7 +5,7 @@ import green from "../assets/background1.jpg";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center w-screen py-8" style={{ backgroundImage: `url(${green})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="flex flex-col items-center w-full py-8" style={{ backgroundImage: `url(${green})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       {/* Title Section */}
       <h1 className="text-center text-3xl md:text-4xl text-white font-bold mb-8">
         உலகின் முதல் உணவு விஞ்ஞானி <span className='text-black'>அம்மா..</span>
