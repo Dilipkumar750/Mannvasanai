@@ -10,15 +10,17 @@ import Contact from './Contact';
 import Sepeciality from './Sepeciality';
 import Footer from './Footer';
 import HomePage from './HomePage';
+import Intro from './Intro';
 
 const Home = () => {
   return (
     <div>
       <HomePage/>
       <Hero/>
-      <Swipe/>
-      <Testmonial/>
+      {/* <Swipe/> */}
+      {/* <Testmonial/> */}
       <AboutUs/>
+      <Intro/>
       <Banner/>
       <Work/>
       <Menu/>
