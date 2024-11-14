@@ -2,6 +2,7 @@ import { FaAppleAlt, FaHeart, FaArrowUp } from "react-icons/fa";
 import poster from "../assets/poster.jpg";
 import background from "../assets/bg1.jpg";
 import nammalvar from "../assets/nammalvar.jpg";
+import poster1 from "../assets/poster1.jpg";
 
 const About1 = () => {
   return (
@@ -61,7 +62,7 @@ const About1 = () => {
                 className="w-[60%] lg:translate-x-10 rounded-2xl"
               />
               <img
-                src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                src={poster1}
                 alt="Image 2"
                 className="w-[60%] lg:translate-x-10 mt-4 rounded-2xl"
               />
