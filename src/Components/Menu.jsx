@@ -7,6 +7,7 @@ import menu4 from '../assets/nilakadalai urundai.jpeg';
 import menu5 from '../assets/thenai mixere.png';
 import menu6 from '../assets/snacks3.png';
 import menu7 from '../assets/rava laddu2.jpg.png';
+import menu8 from '../assets/Coconut-Burfi.png';
 
 function Menu() {
     const [filter, setFilter] = useState('all');
@@ -45,25 +46,25 @@ function Menu() {
                     nutrient: "Fat",
                     value100g: "33 g",
                     valueServing: "10.89 g",
-                     dvPercent: "16%"
+                    dvPercent: "16%"
                 },
                 {
                     nutrient: "Fibre",
                     value100g: "7.23 g",
                     valueServing: "2.38 g",
-                     dvPercent: "9.5%"
+                    dvPercent: "9.5%"
                 },
                 {
                     nutrient: "Calcium",
                     value100g: "72.7 mg",
                     valueServing: "23.9 mg",
-                     dvPercent: "1.8%"
+                    dvPercent: "1.8%"
                 },
                 {
                     nutrient: "Iron",
                     value100g: "3.04 mg",
                     valueServing: "1 mg",
-                     dvPercent: "5.5%"
+                    dvPercent: "5.5%"
                 }
             ]
 
@@ -175,8 +176,9 @@ function Menu() {
         },
         { id: 4, heading: "சிறுதானிய லட்டு", price: "$10", subtitle: "நாட்டு சர்க்கரை", img: menu1, category: "Sweets", detail: "இந்த சிறுதானிய லட்டு நாட்டு சர்க்கரையைப் பயன்படுத்தி ஆரோக்கியமான முறையில் தயாரிக்கப்பட்டது. இதில் குதிரைவாலி, தினை, சாமை போன்ற சிறுதானியங்கள் சேர்க்கப்பட்டு, மிகுந்த சத்துமிக்கதாகவும், நார்ச்சத்து நிறைந்ததாகவும் உள்ளது. பாரம்பரிய முறையில் உள்ள இந்நறுமண லட்டு, சத்துணவாகும், மேலும் இது நீண்ட நேரத்துக்கு பசிக்குடிப்பை தடை செய்கிறது." },
         { id: 5, heading: "ரவா லட்டு", price: "$10", subtitle: "நாட்டு சர்க்கரை", img: menu7, category: "Sweets", detail: "இந்த ரவா லட்டு நாட்டு சர்க்கரையை வைத்து சுவையாகவும், ஆரோக்கியமாகவும் தயாரிக்கப்பட்டது. மொத்த ரவா, நெய், மற்றும் நாட்டு சக்கரையின் இனிப்பால் பரிமாறப்படும் இந்த லட்டு, மிருதுவாகவும் இனிய சுவையுடனும் அமைந்துள்ளது. பாரம்பரிய நம்பிக்கைகளுக்கு ஏற்ப, இந்த இனிப்பு சிறியவர்களும் பெரியவர்களும் விரும்பும் தன்மையுடையது." },
-        { id: 6, heading: "சிறுதானிய மிக்சர் / பாரம்பரிய மிக்சர்", price: "$10", subtitle: "திணை", img: menu5, category: "Snacks", detail: "இந்த சிறுதானிய மிக்சர் பாரம்பரிய முறைப்படி குதிரைவாலி, தினை, சாமை போன்ற சிறுதானியங்களால் தயாரிக்கப்பட்டது. இதில் உள்ள ஒவ்வொரு தானியமும் உடலுக்கு சத்துக்களை வழங்குவதோடு, இந்த மிக்சர் நார்ச்சத்து, கனிமச்சத்து ஆகியவற்றில் வளமையாகவும் உள்ளது. நேர்த்தியான காய்கலை முறை மற்றும் கிராமிய சுவையோடு இந்த மிக்சர் குடும்பம் முழுவதற்கும் ஆரோக்கியமான இடைவேளி சிற்றுண்டியாக பயன்படும்." },
-        { id: 7, heading: "சிறுதானிய ரிப்பன் பக்கோடா / தேங்காய் சேர்த்து", price: "$10", subtitle: "திணை", img: menu6, category: "Snacks", detail: "இந்த சிறுதானிய ரிப்பன் பக்கோடா, சுவையான தேங்காய் சேர்க்கப்பட்டு பாரம்பரிய முறையில் தயாரிக்கப்பட்டது. குதிரைவாலி, தினை, சாமை போன்ற சிறுதானியங்களின் தனிச்சுவையுடன் தேங்காயின் இனிய மணமும் சேர்ந்து, இந்த பக்கோடாவை சுவையான மற்றும் சத்தான இடைவேளி சிற்றுண்டியாக ஆக்குகிறது. இது உங்கள் உடலுக்கு ஆரோக்கியம் தரும் சுவையான நொறுக்குத்தீனியாகும்." },
+        { id: 6, heading: "சிறுதானிய மிக்சர் / பாரம்பரிய மிக்சர்", price: "$10", subtitle: "சிறுதானியங்கள்", img: menu5, category: "Snacks", detail: "இந்த சிறுதானிய மிக்சர் பாரம்பரிய முறைப்படி குதிரைவாலி, தினை, சாமை போன்ற சிறுதானியங்களால் தயாரிக்கப்பட்டது. இதில் உள்ள ஒவ்வொரு தானியமும் உடலுக்கு சத்துக்களை வழங்குவதோடு, இந்த மிக்சர் நார்ச்சத்து, கனிமச்சத்து ஆகியவற்றில் வளமையாகவும் உள்ளது. நேர்த்தியான காய்கலை முறை மற்றும் கிராமிய சுவையோடு இந்த மிக்சர் குடும்பம் முழுவதற்கும் ஆரோக்கியமான இடைவேளி சிற்றுண்டியாக பயன்படும்." },
+        { id: 7, heading: "சிறுதானிய ரிப்பன் பக்கோடா / தேங்காய் சேர்த்து", price: "$10", subtitle: "தேங்காய் பால்", img: menu6, category: "Snacks", detail: "இந்த சிறுதானிய ரிப்பன் பக்கோடா, சுவையான தேங்காய் சேர்க்கப்பட்டு பாரம்பரிய முறையில் தயாரிக்கப்பட்டது. குதிரைவாலி, தினை, சாமை போன்ற சிறுதானியங்களின் தனிச்சுவையுடன் தேங்காயின் இனிய மணமும் சேர்ந்து, இந்த பக்கோடாவை சுவையான மற்றும் சத்தான இடைவேளி சிற்றுண்டியாக ஆக்குகிறது. இது உங்கள் உடலுக்கு ஆரோக்கியம் தரும் சுவையான நொறுக்குத்தீனியாகும்." },
+        { id: 8, heading: "தேங்காய் பர்பி", price: "$10", subtitle: "ஆர்கானிக் சர்க்கரை", img: menu8, category: "sweets", detail: "இந்த தேங்காய் பர்பி, இனிமையான தேங்காயுடன் பாரம்பரிய முறையில் தயாரிக்கப்பட்டது. தேங்காயின் சிறந்த சுவை மற்றும் நன்னெடிய மணம், இந்த பர்பியை மிகவும் சுவையான மற்றும் சத்தான சிற்றுண்டியாக மாற்றுகிறது. இது உங்கள் உடலுக்கு ஆரோக்கியம் தரும் சுவையான மற்றும் ஊட்டச்சத்து நிறைந்த இனிப்பு பரிமாற்றமாகும்." },
     ];
 
     const filteredMenuData = filter === 'all' ? menuData : menuData.filter(item => item.category === filter);
@@ -195,7 +197,7 @@ function Menu() {
         <section className="bg-gray-200 py-12" id="our-menu">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-8">
-                    <h2 className="text-4xl font-bold text-gray-800">Menu</h2>
+                    <h2 className="text-4xl font-bold text-gray-800 text-green-500">Menu</h2>
                     <p className="mt-2 text-lg text-gray-700">Explore Our Best Menu</p>
                 </div>
 
@@ -267,16 +269,24 @@ function Menu() {
                     onClick={closeModal}
                 >
                     <div
-                        className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full md:max-w-2xl lg:max-w-4xl h-[90vh] overflow-y-auto sm:p-8"
+                        className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full md:max-w-2xl lg:max-w-4xl h-[90vh] overflow-y-auto sm:p-8 relative"
                         onClick={(e) => e.stopPropagation()}
                     >
+                        {/* Close Button */}
+                        <button
+                            className="absolute top-4 right-4 text-2xl text-gray-800 hover:text-red-500 focus:outline-none"
+                            onClick={closeModal}
+                        >
+                            &times; {/* You can replace this with an asterisk or another symbol */}
+                        </button>
+
                         <img
                             src={selectedItem.img}
                             alt={selectedItem.heading}
                             className="w-full sm:w-80 h-48 sm:h-60 object-cover rounded-lg mb-4 mx-auto"
                         />
                         <h2 className="text-2xl font-bold text-center text-gray-800">{selectedItem.heading}</h2>
-                        <p className="text-xl font-bold text-center text-gray-800 mt-2">{selectedItem.price}</p>
+                        {/* <p className="text-xl font-bold text-center text-gray-800 mt-2">{selectedItem.price}</p> */}
                         <p className="text-md text-gray-600 mt-4 leading-relaxed">{selectedItem.detail}</p>
                         <div className="mt-6 flex justify-center space-x-4">
                             <button
@@ -329,14 +339,11 @@ function Menu() {
                                 </p>
                             </div>
                         )}
-
-
-
-                        {/* Buttons container */}
-
                     </div>
                 </div>
             )}
+
+
         </section>
     );
 }

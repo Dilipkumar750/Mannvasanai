@@ -4,7 +4,7 @@ import { FaListAlt, FaWhatsapp, FaTruck } from 'react-icons/fa';
 const Work = () => {
   return (
     <div className="container py-5">
-      <h2 className="text-center mb-4">How It Works</h2>
+      <h2 className="text-center mb-4 text-green-500">How It Works</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Step 1: Explore Our Menu */}
         <div className="card shadow-sm border rounded p-4 text-center" data-aos="fade-right">
