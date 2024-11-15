@@ -47,7 +47,7 @@ export default function Intro() {
                             <span className="absolute top-6 left-[1.15rem] z-0 h-12 w-12 rounded-full bg-green-500 transition-all duration-300 group-hover:scale-[15]"></span>
                             <div className="relative z-10 flex flex-col space-y-2 w-full">
                                 <IoIosCall className="text-4xl text-white transition-all duration-300" />
-                                <strong className="text-lg text-gray-800 group-hover:text-white">+91 70106 52833</strong>
+                                <strong className="text-lg text-gray-800 group-hover:text-white">+91 88705 66255</strong>
                                 <p className="text-sm text-gray-500 group-hover:text-white">Call Online</p>
                             </div>
                         </div>

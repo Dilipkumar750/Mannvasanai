@@ -23,9 +23,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-8 text-black">Products</h4>
             <ul className="space-y-4">
-              <li><a href="javascript:void(0)" className="text-black hover:text-white text-sm no-underline">Sweets</a></li>
-              <li><a href="javascript:void(0)" className="text-black hover:text-white text-sm no-underline">Organic Mixer</a></li>
-              <li><a href="javascript:void(0)" className="text-black hover:text-white text-sm no-underline">Snacks</a></li>
+              <li><a href="#our-menu" className="text-black hover:text-white text-sm no-underline">Sweets</a></li>
+              <li><a href="#our-menu" className="text-black hover:text-white text-sm no-underline">Organic Mixer</a></li>
+              <li><a href="#our-menu" className="text-black hover:text-white text-sm no-underline">Snacks</a></li>
             </ul>
           </div>
 
@@ -33,12 +33,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-8 text-black">Useful Links</h4>
             <ul className="space-y-4">
-              <li><a href="javascript:void(0)" className="text-black hover:text-white text-sm no-underline">Home</a></li>
-              <li><a href="javascript:void(0)" className="text-black hover:text-white text-sm no-underline">About Us</a></li>
-              <li><a href="javascript:void(0)" className="text-black hover:text-white text-sm no-underline">Our Menu</a></li>
-              <li><a href="javascript:void(0)" className="text-black hover:text-white text-sm no-underline">Speciality</a></li>
-              <li><a href="javascript:void(0)" className="text-black hover:text-white text-sm no-underline">Help</a></li>
-              <li><a href="javascript:void(0)" className="text-black hover:text-white text-sm no-underline">Contact</a></li>
+              <li><a href="#" className="text-black hover:text-white text-sm no-underline">Home</a></li>
+              <li><a href="#about-us" className="text-black hover:text-white text-sm no-underline">About Us</a></li>
+              <li><a href="#our-menu" className="text-black hover:text-white text-sm no-underline">Our Menu</a></li>
+              <li><a href="#specialty" className="text-black hover:text-white text-sm no-underline">Speciality</a></li>
+              <li><a href="#contact" className="text-black hover:text-white text-sm no-underline">Help</a></li>
+              <li><a href="#contact" className="text-black hover:text-white text-sm no-underline">Contact</a></li>
             </ul>
           </div>
 
