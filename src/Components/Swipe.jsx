@@ -1,6 +1,6 @@
 import React from 'react';
 import home3 from "../assets/mixture.jpg";
-import home2 from '../assets/ell-urundai.png';
+import home2 from '../assets/ell-urundai1.png';
 
 const posts = [
   {
@@ -32,7 +32,7 @@ const Swipe = () => {
             >
               {/* Image Section */}
               <div className="w-full md:w-1/3 flex justify-center items-center px-4 py-6 md:px-5" data-aos="fade-right">
-                <img className="w-48 h-32 sm:w-64 object-cover rounded-lg" src={post.image} alt={post.title} />
+                <img className="w-48 h-52 sm:w-64 object-cover rounded-lg" src={post.image} alt={post.title} />
               </div>
 
               {/* Text Section */}
