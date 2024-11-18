@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaStar, FaWhatsapp } from "react-icons/fa";
 import menu1 from '../assets/siruthaaniyam.jpg';
-import menu2 from '../assets/ell-urundai.png';
+import menu2 from '../assets/ell-urundai1.png';
 import menu3 from '../assets/rava laddu.jpg';
 import menu4 from '../assets/nilakadalai urundai.jpeg';
 import menu5 from '../assets/thenai mixere.png';
