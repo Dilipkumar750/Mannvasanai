@@ -106,7 +106,7 @@ function Navbar() {
             </li>
             <li className="text-gray-600 md:text-base p-2 hover:text-green-600" data-aos="fade-down" data-aos-duration="1400">
               <a
-                href="https://wa.me/7010652833"
+                href="https://wa.me/+918870566255"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-600 text-white py-2 px-4 rounded-lg no-underline"

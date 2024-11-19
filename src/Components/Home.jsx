@@ -11,24 +11,29 @@ import Sepeciality from './Sepeciality';
 import Footer from './Footer';
 import HomePage from './HomePage';
 import Intro from './Intro';
+import References from './References';
+import Organic from './organic';
 
 const Home = () => {
   return (
     <div>
-      <HomePage/>
-      <Intro/>
-    <Swipe/>
-      <Hero/>
-  
+      <HomePage />
+      <Intro />
+      <Swipe />
+      <Hero />
+
       {/* <Testmonial/> */}
-      <AboutUs/>
-    
-      <Banner/>
-      <Work/>
-      <Menu/>
-      <Sepeciality/>
-      <Contact/>
-      <Footer/>
+      <AboutUs />
+
+      <Banner />
+      <Work />
+      <Menu />
+      <Organic/>
+      <Sepeciality />
+      <Contact />
+      <References />
+      <Footer />
+
     </div>
   )
 }

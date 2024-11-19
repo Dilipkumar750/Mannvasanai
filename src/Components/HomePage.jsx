@@ -2,7 +2,7 @@ import { FaAppleAlt, FaHeart, FaArrowUp } from "react-icons/fa";
 import poster from "../assets/poster.jpg";
 import background from "../assets/bg1.jpg";
 import nammalvar from "../assets/nammalvar.jpg";
-import poster1 from "../assets/poster1.jpg";
+import poster1 from "../assets/rava laddu.jpg";
 
 const About1 = () => {
   return (
@@ -86,7 +86,7 @@ const About1 = () => {
           className="w-full lg:w-5/12 p-6 bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg relative"
           data-aos="fade-up"
         >
-          <span className="block mb-4 text-lg font-semibold text-primary">
+          <span className="block mb-4 text-lg font-semibold text-green-600">
             கோவை மண்வாசனை இயற்கை உணவகம்
           </span>
           <h2 className="mb-5 text-[12px] font-bold text-dark  md:text-md">
