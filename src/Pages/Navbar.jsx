@@ -26,7 +26,7 @@ function Navbar() {
         </a>
 
         {/* Thirukural Text (Hidden on tablets and below) */}
-        <div className="hidden lg:flex w-full flex-grow font-bold -translate-x-20  text-green-600 text-md justify-center items-center">
+        <div className="hidden lg:flex w-full flex-grow font-bold -translate-x-20 text-green-600 text-md justify-center items-center">
           <span>
             மருந்தென வேண்டாவாம் யாக்கைக்கு அருந்தியது
             <br />
