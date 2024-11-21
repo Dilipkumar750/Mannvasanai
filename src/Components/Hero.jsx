@@ -14,10 +14,7 @@ const Hero = () => {
       }}
     >
       {/* Title Section */}
-      <h1 className="text-center text-3xl md:text-4xl text-white font-bold mt-10">
-        உலகின் முதல் உணவு விஞ்ஞானி{" "}
-        <span className="text-white">{"“"}அம்மா..{"”"}</span>
-      </h1>
+      
       <h1 className="text-center text-3xl md:text-4xl text-green-400 font-bold mt-10">
         ஈடில்லா இயற்கை வேளாண்மை
         {" "}
