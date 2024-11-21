@@ -13,6 +13,8 @@ import HomePage from './HomePage';
 import Intro from './Intro';
 import References from './References';
 import Organic from './organic';
+import Rice from './Rice';
+import Brahmmis from './brahmmis';
 
 const Home = () => {
   return (
@@ -29,9 +31,11 @@ const Home = () => {
       <Work />
       <Menu />
       <Organic/>
+      <Rice/>
       <Sepeciality />
       <Contact />
       <References />
+      <Brahmmis/>
       <Footer />
 
     </div>
