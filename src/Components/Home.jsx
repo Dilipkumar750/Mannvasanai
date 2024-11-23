@@ -21,13 +21,14 @@ const Home = () => {
     <div>
       <HomePage />
       <Intro />
-      <Swipe />
+      <AboutUs />
+      {/* <Swipe /> */}
       <Hero />
 
       {/* <Testmonial/> */}
-      <AboutUs />
+     
 
-      <Banner />
+      {/* <Banner /> */}
       <Work />
       <Menu />
       <Organic/>

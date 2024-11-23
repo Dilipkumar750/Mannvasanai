@@ -49,7 +49,7 @@ const Footer = () => {
               <p className="text-black text-sm">
                 14/29-2, Selvarajapuram, Pappampattiprivu, Behind Prasanthi Weigh Bridge, Next to Food in 641 Hotel, Chinthamanipudur Post, Irugur Via, Coimbatore - 641103
               </p>
-              <p className="text-black text-sm">kovaimanvaasanai@gmail.com</p>
+              <p className="text-black text-sm">kovaimannvaasanai@gmail.com</p>
               <p className="text-black text-sm">+91 88705 66255</p>
             </div>
           </div>

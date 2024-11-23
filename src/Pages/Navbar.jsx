@@ -1,12 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/brahmmis logo recreate.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let scrollPosition = window.scrollY + 100; // Offset for fixed navbar
+
+      sections.forEach((section) => {
+        const sectionId = section.getAttribute("id");
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          setActiveSection(sectionId);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header className="shadow sticky top-0 bg-gray-50 z-50 w-full">
@@ -20,7 +47,8 @@ function Navbar() {
             src={logo}
             alt="Brand Logo"
             className="max-w-24 h-24"
-            data-aos="fade-in" data-aos-duration="3000"
+            data-aos="fade-in"
+            data-aos-duration="3000"
             style={{ width: "120px" }}
           />
         </a>
@@ -40,7 +68,6 @@ function Navbar() {
           className="absolute top-5 right-7 cursor-pointer md:hidden"
           aria-label="Toggle Navigation"
         >
-          <span className="sr-only">Toggle Navigation</span>
           <svg
             className="h-6 w-6"
             fill="none"
@@ -61,50 +88,39 @@ function Navbar() {
           aria-label="Header Navigation"
           className={`${
             isOpen ? "mt-1 max-h-56" : "max-h-0"
-          } peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all  lg:-ml-28 md:max-h-full md:flex-row md:items-center md:justify-between`}
+          } peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all lg:-ml-28 md:max-h-full md:flex-row md:items-center md:justify-between`}
         >
-          <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0 md:space-x-6 w-full">
-            <li className="text-gray-600 md:text-base hover:text-green-600 no-underline" data-aos="fade-down" data-aos-duration="400">
-              <a
-                href="#"
-                className="no-underline text-gray-600 hover:text-green-600 transition-all duration-300"
+          <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0 md:space-x-6 w-full ">
+            {[
+              { id: "home", label: "Home", link: "#" },
+              { id: "about-us", label: "About Us", link: "#about-us" },
+              { id: "our-menu", label: "Our Menu", link: "#our-menu" },
+              { id: "specialty", label: "Specialty", link: "#specialty" },
+              { id: "contact", label: "Contact Us", link: "#contact" },
+            ].map((item, index) => (
+              <li
+                key={item.id}
+                className={`text-black md:text-base ${
+                  activeSection === item.id
+                    ? " text-[#3933] font-bold"
+                    : "hover:text-green-600"
+                }`}
+                data-aos="fade-down"
+                data-aos-duration={`${400 + index * 200}`}
               >
-                Home
-              </a>
-            </li>
-            <li className="text-gray-600 md:text-base hover:text-green-600" data-aos="fade-down" data-aos-duration="600">
-              <a
-                href="#about-us"
-                className="no-underline text-gray-600 hover:text-green-600 transition-all duration-300"
-              >
-                About Us
-              </a>
-            </li>
-            <li className="text-gray-600 md:text-base hover:text-green-600" data-aos="fade-down" data-aos-duration="800">
-              <a
-                href="#our-menu"
-                className="no-underline text-gray-600 hover:text-green-600 transition-all duration-300"
-              >
-                Our Menu
-              </a>
-            </li>
-            <li className="text-gray-600 md:text-base hover:text-green-600" data-aos="fade-down" data-aos-duration="1000">
-              <a
-                href="#specialty"
-                className="no-underline text-gray-600 hover:text-green-600 transition-all duration-300"
-              >
-                Specialty
-              </a>
-            </li>
-            <li className="text-gray-600 md:text-base hover:text-green-600" data-aos="fade-down" data-aos-duration="1200">
-              <a
-                href="#contact"
-                className="no-underline text-gray-600 hover:text-green-600 transition-all duration-300"
-              >
-                Contact Us
-              </a>
-            </li>
-            <li className="text-gray-600 md:text-base p-2 hover:text-green-600" data-aos="fade-down" data-aos-duration="1400">
+                <a
+                  href={item.link}
+                  className="no-underline transition-all duration-300"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+            <li
+              className="text-[#000000] md:text-base p-2 hover:text-green-600 hover:font-bold"
+              data-aos="fade-down"
+              data-aos-duration="1400"
+            >
               <a
                 href="https://wa.me/+918870566255"
                 target="_blank"

@@ -1,6 +1,6 @@
 import React from "react";
-import nammalvar from "../assets/nammalvar.jpeg";
-import ural from "../assets/ural.jpeg";
+import nammalvar from "../assets/ural.jpeg";
+import ural from "../assets/ural Image.jpeg";
 import green from "../assets/bg2.jpg";
 
 const Hero = () => {
@@ -81,6 +81,18 @@ const Hero = () => {
           />
         </div>
       </div>
+      <div className="text-center flex flex-col justify-center">
+          <p className="text-white text-2xl sm:text-2xl  mb-8 font-bold px-4 sm:px-0">
+            முழுக்க முழுக்க பெண்களால் தயாரிக்கப்பட்டு பழங்கால, பாரம்பரிய முறையில் <br/>பாட்டி, அப்பத்தா காலத்தை மீட்டெடுத்து உடலுக்கு வலுவூட்டி உரமூட்டும் பலகாரங்கள்.
+          </p>
+
+          <button 
+            type="button" 
+            className="bg-gradient-to-r hover:bg-gradient-to-l from-green-600 to-green-800 hover:bg-green-500 text-white tracking-wide font-semibold text-sm py-3 px-6 rounded-lg w-max mx-auto mt-4 transition duration-300"
+          >
+            Shop Now
+          </button>
+        </div>
     </div>
   );
 };
