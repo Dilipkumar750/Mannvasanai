@@ -59,7 +59,7 @@ const Footer = () => {
 
       <div className="text-center py-2 bg-green-600">
         <p className="text-black text-sm">
-          Copyright © 2024 Brahmmis All Rights Reserved. Crafted with ♥ by Ultrafly Solutions Pvt Ltd
+          Copyright © 2024 Kovai Mannvasanai All Rights Reserved.
         </p>
       </div>
     </footer>

@@ -36,7 +36,7 @@ const riceVarieties = [
 const Rice = () => {
     return (
         <div className="bg-gray-200 py-10 px-4">
-            <h1 className="text-2xl font-bold text-green-800 text-center mb-6">
+            <h1 className="text-2xl font-bold text-green-800 text-center mb-6">z
                 நம் முன்னோர்கள் பயன்படுத்திய அரிசி வகைகளின் பலன்கள்
             </h1>
             <div className="max-w-7xl mx-auto">
