@@ -49,7 +49,7 @@ const Footer = () => {
               <p className="text-black text-sm">
                 14/29-2, Selvarajapuram, Pappampattiprivu, Behind Prasanthi Weigh Bridge, Next to Food in 641 Hotel, Chinthamanipudur Post, Irugur Via, Coimbatore - 641103
               </p>
-              <p className="text-black text-sm">kovaimanvaasanai@gmail.com</p>
+              <p className="text-black text-sm">kovaimannvaasanai@gmail.com</p>
               <p className="text-black text-sm">+91 88705 66255</p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
 
       <div className="text-center py-2 bg-green-600">
         <p className="text-black text-sm">
-          Copyright © 2024 Brahmmis All Rights Reserved. Crafted with ♥ by Ultrafly Solutions Pvt Ltd
+          Copyright © 2024 Kovai Mannvasanai All Rights Reserved.
         </p>
       </div>
     </footer>

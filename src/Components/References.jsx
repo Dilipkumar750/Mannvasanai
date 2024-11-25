@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLeaf, FaSeedling } from "react-icons/fa"; // Importing necessary icons
 import green from "../assets/greenish1.jpg";
 
@@ -9,8 +9,8 @@ const topReferences = [
         details: "நம்மாழ்வார் உயிர்ச்சூழல் நடுவம், கடவூர், கருமான்பட்டி, கரூர்.",
     },
     {
-        title: "திரு. ம.செந்தமிழன்",
-        details: "காந்திமதி செந்தமிழன், செம்மைவனம், செங்கிப்பட்டி, தஞ்சாவூர்.",
+        title: "இயற்கை மற்றும் பழங்குடி மாமக்களின் நலன் விரும்பி.. தற்சார்பு வாழ்வியலின் ஆசான். திரு. ம.செந்தமிழன்",
+        details: "திருமதி.காந்திமதி செந்தமிழன், செம்மைவனம், செங்கிப்பட்டி, தஞ்சாவூர்.",
     },
     {
         title: "கோவையின் நம்மாழ்வார்",
@@ -88,6 +88,7 @@ const references = [
         icon1: <FaLeaf className="text-green-600 text-4xl mb-3" />,
         icon2: <FaSeedling className="text-green-600 text-4xl mt-3" />,
     },
+
     {
         title: "சோற்றுக் கற்றாழை இராமசாமி அய்யா",
         details: "காரமடை, கோவை.",
@@ -157,6 +158,9 @@ const ReferenceCard = ({ title, details }) => (
 );
 
 const References = () => {
+    const [showMore, setShowMore] = useState(false);
+    const displayedReferences = showMore ? references : references.slice(0, 0); // Show 6 references initially
+
     return (
         <div
             className="bg-gray-100 py-10 border border-green-500"
@@ -189,36 +193,19 @@ const References = () => {
 
             {/* Additional References Section */}
             <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 mt-10">
-                {references.map((ref, index) => (
+                {displayedReferences.map((ref, index) => (
                     <ReferenceCard key={index} title={ref.title} details={ref.details} />
                 ))}
             </div>
 
-            {/* Closing Notes */}
-            <div className="mt-8 px-4 flex justify-end">
-                <div className="w-full sm:w-2/3 md:w-1/2 text-sm text-black leading-relaxed font-bold">
-                    <p>
-                        மேலும் இயற்கையை மீட்டெடுக்கப் போராடும் அனைத்து சிறு, குறு இயற்கை விவசாயிகளுக்கும்
-                        இதயம் கனிந்த நன்றிகளுடன்...
-                    </p>
-                    <p>
-                        மேலும் மனமார்ந்த வாழ்த்துகள்... மூலிகைகளின் உயிர்ப்பிப்பாய், உபயோகப்படுத்தும் பொருளே,
-                        கருவறைப் பிரச்சனைகளுக்கான தீர்வாய்...
-                    </p>
-                    <p>
-                        பெண்களின் மாதாந்திர இன்னல்களைத் தீர்க்கும் மகத்துவ மருந்தாய்...
-                        உருவாக்கப்பட்டதும்... பெண்களுக்கான சிறப்பானதும்...
-                    </p>
-                    <p>
-                        இயற்கை அங்காடிகளில் வாடிக்கையாளராகி, பூச்சிக்கொல்லி, செயற்கை உரம் எனும் நஞ்சில்லா உணவுப் பொருட்களைப் பயன்படுத்தி, வீட்டையும், நாட்டையும் காக்கவும்...
-                        இயற்கையை மீட்டெடுக்கவும்... மக்களை ... வேண்டுகோளுடனும்... அன்புடனும்... அழைக்கும்...
-                    </p>
-                    <p>
-                        <strong className="text-green-800">கோவை மண்வாசனை மனோன்மணி</strong>
-                        <br />
-                        98651 66255
-                    </p>
-                </div>
+            {/* Show More Button */}
+            <div className="text-center mt-8">
+                <button
+                    onClick={() => setShowMore(!showMore)}
+                    className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
+                >
+                    {showMore ? "Show Less" : "Show More"}
+                </button>
             </div>
         </div>
     );

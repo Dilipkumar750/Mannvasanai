@@ -91,7 +91,7 @@ const About1 = () => {
             className="w-full lg:w-6/12 p-6 bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg relative"
             data-aos="fade-up"
           >
-            <span className="block mb-4 text-lg font-semibold text-green-600">
+            <span className="block mb-4 text-3xl font-semibold text-green-600">
               கோவை மண்வாசனை இயற்கை உணவகம்
             </span>
             
