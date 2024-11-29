@@ -14,7 +14,7 @@ import Intro from './Intro';
 import References from './References';
 import Organic from './organic';
 import Rice from './Rice';
-import Brahmmis from './brahmmis';
+import Brahmmis from './Brahmmis';
 
 const Home = () => {
   return (
