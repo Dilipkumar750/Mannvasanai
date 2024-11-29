@@ -143,6 +143,28 @@ const references = [
         icon1: <FaLeaf className="text-green-600 text-4xl mb-3" />,
         icon2: <FaSeedling className="text-green-600 text-4xl mt-3" />,
     },
+    {
+        title: "யோகேஷ்வர் காய்கறி வைத்தியர்",
+        details: (
+            <>
+                <p>
+                    Uppilipalayam, Coimbatore - 15<br />
+                    <a
+                        href="https://www.vegetableclinic.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 underline"
+                    >
+                        www.vegetableclinic.com
+                    </a>
+                </p>
+            </>
+        ),
+        icons: {
+            icon1: <FaLeaf className="text-green-600 text-4xl mb-3" />,
+            icon2: <FaSeedling className="text-green-600 text-4xl mt-3" />,
+        },
+    },
 ];
 
 // ReferenceCard Component
